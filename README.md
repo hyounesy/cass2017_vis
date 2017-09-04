@@ -120,11 +120,10 @@ The goal is to enhance the current analytical power of VisRseq to allow getting 
   * If your app is selected to be included in the VisRseq framework, you will be credited in the credits section of the webpage.
 
 
-
 ## Submitting
-All submissions are due by Thursday Sept 7th at 11:59pm czech time (CET). The results will be announced and discussed during the workshop session on September 8.
+All submissions are due by Thursday Sept 7th at 11:59pm czech time (CET). The results will be announced and discussed during the workshop session on Friday September 8 at 8:30am CET.
 
 Please refer to the [submission instructions](submissions/README.md) for details.
 
 ## Questions and Issues
-Please use the [github issue page](https://github.com/hyounesy/cass2017_vis/issues) to ask questions or report issues.
+You may ask your questions in person from Thomas Torsney-Weir or use the [github issue page](https://github.com/hyounesy/cass2017_vis/issues).
