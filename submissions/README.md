@@ -1,17 +1,17 @@
 # Submission
-All submissions are due by Sunday, July 17th @11:59PM Beijing Time (CST). The results will be announced and discussed during the workshop session on Monday July 18th.
+All submissions are due by Thursday Sept 7th at 11:59pm czech time (CET). The results will be announced and discussed during the workshop session on Friday September 8 at 8:30am CET.
 
-Submission should be in the form of a git pull request of a directory with your fullname (Firstname_Lastname) containing your submissions as well as a ```readme.txt``` (or ```readme.md``` if you would like to use markdown) file, specifying the category(ies) you are submitting for and any additional information about your submission.
+Submission should be in the form of a git pull request of a directory with your fullname (cass2017_vis/submissions/Firstname_Lastname) containing your submissions as well as a ```readme.txt``` (or ```readme.md``` if you would like to use markdown) file, specifying the category(ies) you are submitting for and any additional information about your submission.
 
 ## Submission Instructions:
 ### Option1
-If you are already comfortable with git commands, then just create a fork of the project, place your files in a directory named as your fullname (i.e. Firstname_Lastname) inside the submissions directory. Commit and push it (to your forked branch) and then create a pull request. Please put your fullname in the commit and pull request messages.
+If you are already comfortable with git commands, then just create a fork of the project, place your files in a directory named as your fullname (i.e. Firstname_Lastname) inside the cass2017_vis/submissions/ directory. Commit and push it (to your forked branch) and then create a pull request. Please put your fullname in the commit and pull request messages.
 
 ### Option2
 You may also use the github's web interface to upload your submission:
 
   * Make sure you are logged in with your github account
-  * In your browser, navigate to the workshop's [github page](https://github.com/hyounesy/beijing2016/)
+  * In your browser, navigate to the workshop's [github page](https://github.com/hyounesy/cass2017_vis/)
   * In the github page, click on [Fork] button on the top right to create a fork of the repository
 
 <img src="images/step1.png" width="30%" height="30%">
@@ -24,7 +24,7 @@ You may also use the github's web interface to upload your submission:
 
 <img src="images/step3.png" width="30%" height="30%">
 
-  * In your github branch, go under the beijing2016/submissions/ directory
+  * In your github branch, go under the cass2017_vis/submissions/ directory
   * click on the [Upload files] button
 
 <img src="images/step4.png" width="30%" height="30%">
@@ -33,11 +33,11 @@ You may also use the github's web interface to upload your submission:
 
 <img src="images/step5.png" width="30%" height="30%">
 
-  * Go back to the main github repository page (/beijing2016) and click on [New pull request].
+  * Go back to the main github repository page (/cass2017_vis) and click on [New pull request].
 
 <img src="images/step6.png" width="30%" height="30%">
 
-  * Make sure base fork is selected as hyounesy/beijing2016. Then Click on [Create pull request] button.
+  * Make sure base fork is selected as hyounesy/cass2017_vis. Then Click on [Create pull request] button.
 
 <img src="images/step7.png" width="30%" height="30%">
 

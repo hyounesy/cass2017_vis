@@ -11,9 +11,10 @@ Download the latest version of VisRseq from [visrseq.github.io](http://visrseq.g
   * Download the small test data from [data/tiny](data/tiny)
   * Run VisRseq
   * Click on the toolbar button with the table icon (top left) and select [Open Table]
-  * Open the data/tiny/circle file
+  * Open the data/tiny/circle_25/input.txt file
+  * Open the data/tiny/circle_25/index.txt file
   * Drag-n-Drop the [Table View] or [Scatter Plot] app from the Apps pane (bottom left) to the workspace.
-  * Drag-n-Drop the mpg data from the data pane into the app window.
+  * Drag-n-Drop either of the data tables from the data pane into the app window.
   * Change the app parameters using the Parameter pane (right)
 
   
@@ -34,15 +35,15 @@ For one of the datasets (full), we have randomized all parameters, including the
 
  _ | data | Download Link | Description
 ----|----|----|----
-![](images/full.png) | full | [full.zip (3.3 GB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICa0s1blY4bGVMNzg&export=download)| random shapes and noises
-![](images/circle.png) | circle_25 | [circle_25.zip (350MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICSzV0V1RwZVY3S00&export=download)| circle with 25% noise
-![](images/gauss.png) | gauss_25 | [gauss_25.zip (350MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICLUxtUGtRR05KbTg&export=download)| gauss with 25% noise
-![](images/xor.png) | xor_25 | [xor_25.zip (350 MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICeG45RkRPSFE5S28&export=download) | xor with 25% noise
-![](images/spiral.png) | spiral_25 | [spiral_25.zip (350 MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICY29ONTNnX0lvczA&export=download) | spiral with 25% noise
+![](images/full.png) | full | [full.zip (3.3 GB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICa0s1blY4bGVMNzg&export=download)| random shapes and noises. 100,000 records
+![](images/circle.png) | circle_25 | [circle_25.zip (350MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICSzV0V1RwZVY3S00&export=download)| circle with 25% noise. 10,000 records
+![](images/gauss.png) | gauss_25 | [gauss_25.zip (350MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICLUxtUGtRR05KbTg&export=download)| gauss with 25% noise. 10,000 records
+![](images/xor.png) | xor_25 | [xor_25.zip (350 MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICeG45RkRPSFE5S28&export=download) | xor with 25% noise. 10,000 records
+![](images/spiral.png) | spiral_25 | [spiral_25.zip (350 MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICY29ONTNnX0lvczA&export=download) | spiral with 25% noise. 10,000 records
 
 Here are information about the data files:
 
-###index.txt
+### index.txt
 This file contains the summarized stats for the parameter space analysis. Each row corresponds to one random combination of hyper parameter values at a particular epoch.
 
 field | type | description
