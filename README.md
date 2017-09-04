@@ -1,4 +1,6 @@
-# Materials for the Visualization assignment for 2017 Czech-Austrian Summer School on "Deep Learning and Visual Data Analysis" 
+# Parameter Space Analysis of Neural Networks
+
+Materials for the Visualization assignment for 2017 Czech-Austrian Summer School on "Deep Learning and Visual Data Analysis" 
 
 
 ## Software Requirements
@@ -38,45 +40,48 @@ For one of the datasets (full), we have randomized all parameters, including the
 ![](images/xor.png) | xor_25 | [xor_25.zip (350 MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICeG45RkRPSFE5S28&export=download) | xor with 25% noise
 ![](images/spiral.png) | spiral_25 | [spiral_25.zip (350 MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICY29ONTNnX0lvczA&export=download) | spiral with 25% noise
 
-Here are information about the fields: (TBD)
+Here are information about the data files:
+
+###index.txt
+This file contains the summarized stats for the parameter space analysis. Each row corresponds to one random combination of hyper parameter values at a particular epoch.
 
 field | type | description
 ---- | ---- | ----
-ID	|  | 
-imagePath |  | 
-data |  | 
-noise |  | 
-training_ratio |  | 
-batch_size |  | 
-X1 |  | 
-X2 |  | 
-X1Squared |  | 
-X2Squared |  | 
-X1X2 |  | 
-sinX1 |  | 
-sinX2 |  | 
-layer_count |  | 
-neuron_count |  | 
-H1 |  | 
-H2 |  | 
-H3 |  | 
-H4 |  | 
-H5 |  | 
-H6 |  | 
-learning_rate |  | 
-activation |  | 
-regularization |  | 
-regularization_rate |  | 
-epoch |  | 
-iteration |  | 
-total_time |  | 
-mean_time |  | 
-train_loss |  | 
-test_loss |  | 
-train_TPR |  | 
-train_FPR |  | 
-test_TPR |  | 
-test_FPR |  | 
+ID	| output: integer | row unique id
+imagePath | output: string | output image path
+data | input: string: {circle, gauss, xor, spiral} | dataset shape
+noise | input: int: [0 .. 50] | data noise percent: 0 to 50
+training_ratio | input: int: [10 .. 90]  | ratio of training to test data
+batch_size | input: int: [1 .. 30] | training batch size
+X1 | input: int: {0, 1} | 1 if X<sub>1</sub> feature is an input to the network, 0 otherwise
+X2 | input: int: {0, 1} | 1 if X<sub>2</sub> feature is an input to the network, 0 otherwise
+X1Squared | input: int: {0, 1} | 1 if X<sub>1</sub><sup>2</sup> feature is an input to the network, 0 otherwise
+X2Squared | input: int: {0, 1} | 1 if X<sub>2</sub><sup>2</sup> feature is an input to the network, 0 otherwise
+X1X2 | input: int: {0, 1} | 1 if X<sub>1</sub>X<sub>2</sub> feature is an input to the network, 0 otherwise
+sinX1 | input: int: {0, 1} | 1 if sin(X<sub>1</sub>) feature is an input to the network, 0 otherwise
+sinX2 | input: int: {0, 1} | 1 if sin(X<sub>2</sub>) feature is an input to the network, 0 otherwise
+layer_count | input: int:[0 .. 6] | number of hidden layers 
+neuron_count | input: int | sum of neurons in all hidden layers
+H1 | input: int: [0 .. 8] | number of neurons in hidden layer 1
+H2 | input: int: [0 .. 8] | number of neurons in hidden layer 2
+H3 | input: int: [0 .. 8] | number of neurons in hidden layer 3
+H4 | input: int: [0 .. 8] | number of neurons in hidden layer 4
+H5 | input: int: [0 .. 8] | number of neurons in hidden layer 5
+H6 | input: int: [0 .. 8] | number of neurons in hidden layer 6
+learning_rate | input: float | learning rate
+activation | input: string: {ReLU, Tanh, Sigmoid, Linear} | activation function for hidden layers
+regularization | input: string: {None, L1, L2} | regularization type
+regularization_rate | input: float | regularization rate
+epoch | output: int: {25, 50, 100, 200, 400} | epoch for which the stats were generated
+iteration | output: int | iteration (step) for which the stats were generated
+total_time | output: float | total time (ms) at this epoch 
+mean_time | output: float | mean time (ms) per epoch
+train_loss | output: float | training loss
+test_loss | output: float | test loss
+train_TPR | output: float | True Positive Rate (rate of +1 points correctly classified) on training data
+train_FPR | output: float | False Positive Rate (rate of -1 points incorrectly classified as +1) on training data
+test_TPR | output: float | True Positive Rate (rate of +1 points correctly classified) on test data
+test_FPR | output: float | False Positive Rate (rate of -1 points incorrectly classified as +1) on test data
 
 
 ## Assignment
@@ -107,7 +112,7 @@ For all questions: please support your answers with figures/images.
 ### (2) App Development / Improvement
 For this category, you can choose to develop a new R-App or modify and improve an existing R-App. This can specially be interesting for those who would like a coding challenge and/or are familiar with R.
 A detailed tutorial on how to create apps for VisRseq framework can be found [here](https://github.com/hyounesy/bioc2016.visrseq).
-The goal is to enhance the current analytical power of VisRseq to allow getting more or improved results. App(s) may add new computational functionality (e.g. new classification method) or new plots. It is still in the context of movie dataset, but the app should be designed such that it can be used with any tabular data.
+The goal is to enhance the current analytical power of VisRseq to allow getting more or improved results. App(s) may add new computational functionality (e.g. new classification method) or new plots. It is still in the context of the parameter space analysis datasets, but the app should be designed such that it can be used with any tabular data.
 
   * The submission should include the ```.R``` and ```.json``` files for the new or improved app. 
   * App(s) should be functional in the current VisRseq version.
@@ -117,7 +122,7 @@ The goal is to enhance the current analytical power of VisRseq to allow getting 
 
 
 ## Submitting
-All submissions are due by ???. The results will be announced and discussed during the workshop session on ???.
+All submissions are due by Thursday Sept 7th at 11:59pm czech time (CET). The results will be announced and discussed during the workshop session on September 8.
 
 Please refer to the [submission instructions](submissions/README.md) for details.
 
