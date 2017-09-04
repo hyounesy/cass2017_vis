@@ -15,15 +15,12 @@ Download the latest version of VisRseq from [visrseq.github.io](http://visrseq.g
   * Change the app parameters using the Parameter pane (right)
 
   
-![](images/mpg_tableview.png)
-![](images/mpg_scatterplot.png)
+![](images/tableview.png)
+![](images/scatterplot.png)
 
 #### [Presentation slides](Slides/VisRseq_Slides.pdf)
 
-## Questions and Issues
-Please use the [github issue page](https://github.com/hyounesy/cass2017_vis/issues) to ask questions or report issues.
-
-## Assignment
+## Introduction
 You will be using / extending VisRseq for visual analysis of parameter space exploration of neural networks inspired on the [web-based tensorflow playground demo](http://playground.tensorflow.org/). If you have not used the online tool previously we encourage you to spend some time with the online tool and get yourself familiarized with different parameters that affect outcome of a neural network.
 We have created the datasets using our own [python implementation](https://github.com/hyounesy/TFPlaygroundPSA) of the online demo. So, while we have tried to keep our implementation as close as possible to the online demo, you may find subtle differences between the outcomes of the two.
 
@@ -31,18 +28,58 @@ There are a total of five different dataset. For all datasets, we have created r
 For one of the datasets (full), we have randomized all parameters, including the input data shape and noise. For each of the other four datasets (circle, xor, gauss, spiral), we kept the data shape and noise fixed,and randomized all the other parameters.
 
 
-Links:
-data | Download Link 
---|--
-fully random | [full.zip (3.3 GB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICa0s1blY4bGVMNzg&export=download)
-circle, noise: 25 | [circle_25.zip (350MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICSzV0V1RwZVY3S00&export=download)
-gauss, noise: 25 | [gauss_25.zip (350MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICLUxtUGtRR05KbTg&export=download)
-xor, noise: 25 | [xor_25.zip (350 MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICeG45RkRPSFE5S28&export=download)
-spiral, noise: 25 | [spiral_25.zip (350 MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICY29ONTNnX0lvczA&export=download)
+## Datasets
 
-Here are information about the fields:
+  | data | Download Link | Description
+----|-----|----|----
+![](images/full.png) | full | [full.zip (3.3 GB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICa0s1blY4bGVMNzg&export=download)| random shapes and noises
+![](images/circle.png) | circle_25 | [circle_25.zip (350MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICSzV0V1RwZVY3S00&export=download)| circle with 25% noise
+![](images/gauss.png) | gauss_25 | [gauss_25.zip (350MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICLUxtUGtRR05KbTg&export=download)| gauss with 25% noise
+![](images/xor.png) | xor_25 | [xor_25.zip (350 MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICeG45RkRPSFE5S28&export=download) | xor with 25% noise
+![](images/spiral.png) | spiral_25 | [spiral_25.zip (350 MB)](https://drive.google.com/uc?id=0Bz2L2qpV9PICY29ONTNnX0lvczA&export=download) | spiral with 25% noise
 
-TBD
+Here are information about the fields: (TBD)
+
+field | type | description
+---- | ---- | ----
+ID	|  | 
+imagePath |  | 
+data |  | 
+noise |  | 
+training_ratio |  | 
+batch_size |  | 
+X1 |  | 
+X2 |  | 
+X1Squared |  | 
+X2Squared |  | 
+X1X2 |  | 
+sinX1 |  | 
+sinX2 |  | 
+layer_count |  | 
+neuron_count |  | 
+H1 |  | 
+H2 |  | 
+H3 |  | 
+H4 |  | 
+H5 |  | 
+H6 |  | 
+learning_rate |  | 
+activation |  | 
+regularization |  | 
+regularization_rate |  | 
+epoch |  | 
+iteration |  | 
+total_time |  | 
+mean_time |  | 
+train_loss |  | 
+test_loss |  | 
+train_TPR |  | 
+train_FPR |  | 
+test_TPR |  | 
+test_FPR |  | 
+
+
+## Assignment
 
 There are two categories for this assignment: (1) Data Analysis, (2) App development / improvement. You may participate in either or both categories.
 
@@ -79,7 +116,10 @@ The goal is to enhance the current analytical power of VisRseq to allow getting 
 
 
 
-### Submitting
+## Submitting
 All submissions are due by ???. The results will be announced and discussed during the workshop session on ???.
 
 Please refer to the [submission instructions](submissions/README.md) for details.
+
+## Questions and Issues
+Please use the [github issue page](https://github.com/hyounesy/cass2017_vis/issues) to ask questions or report issues.
