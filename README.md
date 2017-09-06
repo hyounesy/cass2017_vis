@@ -2,6 +2,13 @@
 
 Materials for the Visualization assignment for 2017 Czech-Austrian Summer School on "Deep Learning and Visual Data Analysis" 
 
+## Introduction
+You will be using / extending VisRseq for visual analysis of parameter space exploration of neural networks inspired on the [web-based tensorflow playground demo](http://playground.tensorflow.org/). If you have not used the online tool previously we encourage you to spend some time with the online tool and get yourself familiarized with different parameters that affect outcome of a neural network.
+We have created the datasets using our own [python implementation](https://github.com/hyounesy/TFPlaygroundPSA) of the online demo. So, while we have tried to keep our implementation as close as possible to the online demo, you may find subtle differences between the outcomes of the two.
+
+There are a total of five different dataset. For all datasets, we have created random configurations of the netural network by picking random values for each of the hyper parameters. For each neural network configuration, we ran the training and recorded statistics about the results at different epochs.
+For one of the datasets (full), we have randomized all parameters, including the input data shape and noise. For each of the other four datasets (circle, xor, gauss, spiral), we kept the data shape and noise fixed,and randomized all the other parameters.
+
 ## Presentation Slides 
 [Presentation slides](Slides/VisRseq_Slides.pdf)
 
@@ -31,13 +38,6 @@ alt="Opening in TableView" width="560" height="315" border="0" /></a>
 Note: The parameter explorer app cannot currently load tables much larger than 10,000 rows due to memory limitation. You may use it on circle_25, xor_25, gauss_25 or spiral_25 datasets, but the parameter explorer app will not work on the full dataset (100,000 rows).
 <a href="https://www.youtube.com/embed/svh7LOX6eY4" target="_blank"><img src="http://img.youtube.com/vi/svh7LOX6eY4/0.jpg" 
 alt="Using parameter explorer app" width="560" height="315" border="10" /></a>
-
-## Introduction
-You will be using / extending VisRseq for visual analysis of parameter space exploration of neural networks inspired on the [web-based tensorflow playground demo](http://playground.tensorflow.org/). If you have not used the online tool previously we encourage you to spend some time with the online tool and get yourself familiarized with different parameters that affect outcome of a neural network.
-We have created the datasets using our own [python implementation](https://github.com/hyounesy/TFPlaygroundPSA) of the online demo. So, while we have tried to keep our implementation as close as possible to the online demo, you may find subtle differences between the outcomes of the two.
-
-There are a total of five different dataset. For all datasets, we have created random configurations of the netural network by picking random values for each of the hyper parameters. For each neural network configuration, we ran the training and recorded statistics about the results at different epochs.
-For one of the datasets (full), we have randomized all parameters, including the input data shape and noise. For each of the other four datasets (circle, xor, gauss, spiral), we kept the data shape and noise fixed,and randomized all the other parameters.
 
 ## Datasets
 
