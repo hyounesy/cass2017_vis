@@ -1,9 +1,9 @@
-## XOR_25 dataset
+## CIRCLE_25 dataset
 This contains small example (first 10 runs (50 rows) of the complete dataset) only for demonstration purpose only.
 
 | file | description |
 |----|----|
-| input.txt | input data generated with xor shape at noise 25%. seven features (X<sub>1</sub>, X<sub>2</sub>, X<sub>1</sub><sup>2</sup>, X<sub>2</sub><sup>2</sup>, X<sub>1</sub>X<sub>2</sub>, sin(X<sub>1</sub>), sin(X<sub>2</sub>)) and labels (ground truth) for 200 input points. The ratio of the training to test is a varying hyper-parameter |
+| input.txt | input data generated with circle shape at noise 25%. seven features (X<sub>1</sub>, X<sub>2</sub>, X<sub>1</sub><sup>2</sup>, X<sub>2</sub><sup>2</sup>, X<sub>1</sub>X<sub>2</sub>, sin(X<sub>1</sub>), sin(X<sub>2</sub>)) and labels (ground truth) for 200 input points. The ratio of the training to test is a varying hyper-parameter |
 | index.txt | values for the hyper-parameters used for each run and summary statistics. There are 5 rows per parameter combination correponding to 5 different epochs (25, 50, 100, 200, 400) |
 | paramInfo.txt | information about each column of index.txt (hyper-parameters + output statistics)|
 | runs/[i].txt | one file for each run: predicted labels the points at the i'th run |
