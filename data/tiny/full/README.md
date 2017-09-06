@@ -1,5 +1,5 @@
 ## FULL dataset
-This contains small example (first 40 runs (200 rows) of the [complete dataset](https://drive.google.com/uc?id=0Bz2L2qpV9PICa0s1blY4bGVMNzg&export=download) of 100,000 rows) and for demonstration purpose only.
+This is a tiny data set of the first 200 records (40 random datasets and hyper-parameter combinations at 5 epochs) from the [complete dataset of 100,000 rows](https://drive.google.com/uc?id=0Bz2L2qpV9PICa0s1blY4bGVMNzg&export=download) and for demonstration purpose only.
 
 | file | description |
 |----|----|

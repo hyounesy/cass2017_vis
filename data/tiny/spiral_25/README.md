@@ -1,5 +1,5 @@
 ## SPIRAL_25 dataset
-This contains small example (first 10 runs (50 rows) of the [complete dataset of 10,000 runs](https://drive.google.com/uc?id=0Bz2L2qpV9PICRWtBYWY1VkFuZWs&export=download)) and for demonstration purpose only.
+This is a tiny data set of the first 50 records (10 random hyper-parameter combinations at 5 epochs) from the [complete dataset of 10,000 rows](https://drive.google.com/uc?id=0Bz2L2qpV9PICRWtBYWY1VkFuZWs&export=download)) and for demonstration purpose only.
 
 | file | description |
 |----|----|
