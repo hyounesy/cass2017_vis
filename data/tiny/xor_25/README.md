@@ -1,5 +1,5 @@
 ## XOR_25 dataset
-This contains small example (first 10 runs (50 rows) of the complete dataset) only for demonstration purpose only.
+This contains small example (first 10 runs (50 rows) of the [complete dataset of 10,000 runs](https://drive.google.com/uc?id=0Bz2L2qpV9PICZkR4YTFRWG5PY1E&export=download)) and for demonstration purpose only.
 
 | file | description |
 |----|----|
@@ -9,7 +9,7 @@ This contains small example (first 10 runs (50 rows) of the complete dataset) on
 | runs/[i].txt | one file for each run: predicted labels the points at the i'th run |
 | images/[i].png | one plot for each run output: predicted classification. training and test points are represented with white and black stroke respectively.|
 
-The following images are the classification output plot for random of hyper-parameters at different iteration steps.
+The following images are the classification output plot for random hyper-parameters at different epochs.
 
 | epoch: 25 | epoch: 50 | epoch: 100 | epoch: 200 | epoch: 400 |
 |----|----|----|----|----|
