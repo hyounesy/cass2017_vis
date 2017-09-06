@@ -24,10 +24,13 @@ learning_rate	Learning rate	double	Learning rate
 activation	Activation	string	Activation
 regularization	Regularization	string	Regularization
 regularization_rate	Regularization rate	double	Regularization rate
-epoch	Epoch	int	Epoch
+epoch	Epoch	int	Number of Epochs (of processing all training data)
+iteration	Iterations	int	Number of Iterations (of processing a batch)
 total_time	Total time (ms)	output	Total time at this epoch
 mean_time	Mean time (ms)	output	Mean time per epoch
-train_loss	Training loss	output	Training loss at step
-test_loss	Test loss	output	Test loss at step
-TPR	True Positive Rate	output	True Positive Rate
-FPR	False Positive Rate	output	False Positive Rate
+train_loss	Training loss	output	Training loss at epoch
+test_loss	Test loss	output	Test loss at epoch
+train_TPR	TPR for train	output	True positive rate for training data
+train_FPR	FPR for train	output	False positive rate for training data
+test_TPR	TPR for test	output	True positive rate for test data
+test_FPR	FPR for test	output	False positive rate for test data
