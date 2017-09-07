@@ -1,0 +1,36 @@
+{
+  "label": "tsne",
+  "info": "",
+  "categories":[  {
+    "label": "",
+    "info": "",
+    "variables": {
+      "visr.param.columns": {
+      "type": "multi-column-numerical"},
+      "visr.param.k": {
+        "type": "int",
+        "default": 2
+      },
+      "visr.param.initial_dims": {
+        "type": "int",
+        "default": 30
+      },
+      "visr.param.perplexity": {
+        "type": "int",
+        "default": 30
+      },
+      "visr.param.max_iter": {
+        "type": "int",
+        "default": 1000
+      },
+      "visr.param.min_cost": {
+        "type": "int",
+        "default": 0
+      },
+      "visr.param.epoch": {
+        "type": "int",
+        "default": 1000
+      }
+    }
+  }]
+}
