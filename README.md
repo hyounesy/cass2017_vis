@@ -113,7 +113,7 @@ Please describe your interesting/surprising findings in words as well by answeri
 1. Were some parameters only important for certain datasets? Which ones? Why?
 1. What drove you to explore different parameters combinations in the tensorflow playground?
 1. What were the limits of the data set? I.e. are there relationships that are inconclusive where a larger data set might have given you a better understanding?
-1. What were the advantages and limits of the interface (visRseq)?
+1. What were the advantages and limits of the interface (VisRseq)?
 
 For all questions: please support your answers with figures/images.
 
