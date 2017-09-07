@@ -1,0 +1,6 @@
+{ "label:e", "categories":[
+    { "variables" : {
+      "param.layers" : {"type":"multi-column-numerical"},
+      "param.result"  : {"type":"multi-column-numerical"}  
+    }} 
+]}
