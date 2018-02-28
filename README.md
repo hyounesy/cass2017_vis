@@ -36,6 +36,7 @@ alt="Opening in TableView" width="560" height="315" border="0" /></a>
 
 ### Using Parameter Explorer app
 Note: The parameter explorer app cannot currently load tables much larger than 10,000 rows due to memory limitation. You may use it on circle_25, xor_25, gauss_25 or spiral_25 datasets, but the parameter explorer app will not work on the full dataset (100,000 rows).
+
 <a href="https://www.youtube.com/embed/svh7LOX6eY4" target="_blank"><img src="http://img.youtube.com/vi/svh7LOX6eY4/0.jpg" 
 alt="Using parameter explorer app" width="560" height="315" border="10" /></a>
 
